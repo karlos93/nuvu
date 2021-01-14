@@ -1,0 +1,13 @@
+<div class="bord3">
+    <div class="bloque" *ngFor="let el of consejo; let i=index" style="position: relative;">
+        <div class="Cons">
+            <p>{{el.titulo}}</p>
+        </div>
+        <div class="descr">
+            {{el.descripcion}}
+        </div>
+        <div class="imgCons">
+            <img [src]="getimagen(i)" alt="">
+        </div>
+</div>
+</div>

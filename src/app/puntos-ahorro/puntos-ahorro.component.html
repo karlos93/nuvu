@@ -1,0 +1,26 @@
+<div style="position: absolute;left:2%;">
+    <p [ngStyle]="estilos(this.font,this.style,'normal','14px',true,'21px',true,'#58506B')">
+        Los P*t@s del ahorro</p> </div>
+        <br>
+<div id="carruselseccion" class="bord2">
+  <div style="position:relative">
+     <video [src]="videoCarrusel()" *ngIf="valorV" controls [poster]="poster">
+         </video>
+         <img [src]="ImagenesCarrusel()" class="imgBaseCarrusel">
+         <p>ESTO ES AHORRO</p><br>
+         <div id="SegundoParrafo">
+            <p>Conoce como nuestro RoboAdvisor crea el mejor portafolio de inversión para ti.</p>
+         </div>
+         
+        </div>
+  </div>
+
+         <div [ngStyle]="flexCSS('center')">
+            <div id="cir1" class="circleSlide" (click)="setUrl('assets/img/Vector 6.png','https://www.youtube.com/watch?v=FolBFI3ZQ0s&ab_channel=RossanaDeSouza',this)"></div>
+            <div class="circleSlide" (click)="setUrl('','',this)"></div>
+            <div class="circleSlide" (click)="setUrl('','',this)"></div>
+         </div>   
+         
+         
+      
+

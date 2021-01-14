@@ -1,0 +1,30 @@
+<div [ngStyle]="titulo()">
+<div style="position: absolute;left:1%;">
+    <p [ngStyle]="estilos(this.font,this.style,'normal','14px',true,'21px',true,'#58506B')">
+    Conoce tu portafolio</p> </div>
+<div [ngStyle]="enlaceEstrategia()">
+    <a style="color:#41CF69" href="">Estrategia</a></div>
+</div >
+
+
+    <div class="bord2" [ngStyle]="flexDivs()">
+        <div  [ngStyle]="seccionPortafolio('right')">
+            <p [ngStyle]="estilos(this.font,this.style,'normal','14px',true,'21px',true,'#58506B')"><b>{{title_1}}</b></p>
+            <div [ngStyle]="porcPortafolio()">{{valorPorcentage*100}}%</div>
+            <p [ngStyle]="estilos(this.font,this.style,'normal','14px',true,'21px',true,'#58506B')">{{producto}}</p>
+            <p [ngStyle]="estilos(this.font,this.style,'normal','14px',true,'21px',true,'#58506B')"><b>{{valor | currency:'USD':true:'3.0'}}</b></p>
+            
+            <p [ngStyle]="estilos(this.font,this.style,'normal','20px',true,'21px',true,'#41CF69')">Tipo de activo</p>
+            <p [ngStyle]="estilos(this.font,this.style,'normal','20px',true,'21px',true,'#58506B')">{{tipoactivo}}</p>
+            
+            <div [ngStyle]="flexDivs()">
+                <p [ngStyle]="estilos(this.font,this.style,'normal','20px',true,'21px',true,'#58506B')"><</p>
+                <p [ngStyle]="estilos(this.font,this.style,'normal','20px',true,'21px',true,'#58506B')">></p>
+            </div>
+        </div>
+        <div  [ngStyle]="seccionPortafolio('left')"><!--grafico-->
+        
+        </div><br>
+            <p id="parrafoPortafolio" [ngStyle]="estilos(this.font,this.style,'normal','10px',true,'21px',true,'#58506B')">
+            Tu  dinero se invierte de la forma más eficiente de acuerdo al perfil de riesgo asignado por nuestro RoboAdvisor.</p>
+    </div>

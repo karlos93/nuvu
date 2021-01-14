@@ -1,0 +1,21 @@
+
+ <p [ngStyle]="estilos(this.font,this.style,'normal','14px',true,'21px',true,'#58506B')">Tus Metas</p>
+   
+    <div class="row form-group">
+<div class="col-md-5 bord" *ngFor="let meta of metas.Meta">
+    <img [src]='imagenes(meta.id)'  class="imgMeta"> <br>
+    <p [ngStyle]="estilos(this.font,this.style,'normal','14px',true,'21px',true,'#58506B')">
+    {{meta.nom}}</p>
+    
+    <div id="chart_div" [ngStyle]="graficoGoogle()"></div>
+    <p class="cifras" [ngStyle]="estilos(this.font,this.style,'normal','14px',true,'21px',true,'#54D1ED')">
+        {{meta.ahorro | currency:'USD':true:'3.0'}}</p><br>
+
+    <p class="cifras2" [ngStyle]="estilos(this.font,this.style,'normal','14px',true,'21px',true,'#58506B')">
+            {{meta.total | currency:'USD':true:'3.0'}}</p>
+
+    
+    
+</div>
+</div>
+

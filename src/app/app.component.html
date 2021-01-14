@@ -1,0 +1,59 @@
+<div class="container">
+  <div class="row  form-group">
+    <div class="col-md-4">
+      <h1 class="saludo">Hola, {{title}}</h1>
+    </div>
+    <div >
+      
+  </div>
+  <img [src]="imagen1"  alt="Notificaciones" >
+</div>
+
+<img [src]="imagen2"  alt="Sra" [ngStyle]="{'position': 'absolute','width':'140px','height': '115px','right': '10px','top':'50px'}" >
+<div class="row form-group estra">
+  <div class="col-md-12">
+    <p>Eres Estrategia</p>
+
+  </div>
+  <div class="col-md-3">
+   <p>Tu saldo</p>
+    <h2 [ngStyle]="estilos(this.font,this.style,'600px','36px',true,'49px',false,'')">{{saldo | currency:'USD':true:'3.0'}}</h2>
+  </div>
+
+</div>
+
+<div class="bord0">
+<div class="row form-group">
+  <div class="col-md-4">
+    <label [ngStyle]="estilos(this.font,this.style,'normal','14px',true,'21px',true,'#58506B')">Inversion</label>
+    </div>
+  
+  <div class="col-md-4">
+    <label [ngStyle]="estilos(this.font,this.style,'normal','14px',true,'21px',true,'#58506B')">
+    {{inversion | currency:'USD':true:'3.0'}}  
+    </label>
+  </div>
+</div>
+  <div class="row form-group">
+    <div class="col-md-4">
+      <label [ngStyle]="estilos(this.font,this.style,'normal','14px',true,'21px',true,'#58506B')">Rendimiento</label>
+    </div>
+  
+    <div class="col-md-4">
+      <label [ngStyle]="estilos(this.font,this.style,'normal','14px',true,'21px',true,'#58506B')">
+        {{rendimineto | currency:'USD':true:'3.0'}}  
+        </label>
+    </div>
+</div>
+</div><br>
+<app-conoce-tu-portafolio></app-conoce-tu-portafolio>
+<br>
+<app-conoce-tu-portafolio-pt2></app-conoce-tu-portafolio-pt2>
+<br>
+<app-puntos-ahorro></app-puntos-ahorro>
+<br>
+<app-consejos-gastos></app-consejos-gastos>
+
+<app-footer></app-footer>
+
+
